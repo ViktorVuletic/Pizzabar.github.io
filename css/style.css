@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding: 0;
+}
+.main{
+    width:100%;
+}
+nav{
+    width: 100%;
+    background:rgba(0,0,0,0.6);
+    height:100px;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo a{
+
+    margin-left: 100px;
+}
+.logo img{
+    width:40%;
+   
+}
+a{
+    text-decoration: none;
+    color:#f3d9ab;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: 0.5s all ease;
+}
+ul{
+    margin:0px;
+    margin-right: 100px;
+}
+ul li{
+    float:left;
+    padding:0px 15px;
+    list-style: none;
+   
+}
+ul li a:hover{
+    color:#e86a38;
+}
+.header{
+    background-image: url('../img/pizza-header.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+.content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:#fff;
+    text-align: center;
+   
+}
+.content h1{
+    font-size:50px;
+   
+}
+.content p{
+    padding: 0px 100px;
+    font-size: 20px;
+}
+.content button{
+    background-color:#e86a38;
+    color:#f3d9ab;
+    border:1px solid #e86a38;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: 0.5s all ease;
+    animation: animate 6s linear infinite;
+   
+}
+.content button a:hover{
+    color:#e86a38;
+}
+.content button:hover{
+    color:#e86a38;
+    background:#f3d9ab;
+    border:1px solid #f3d9ab;
+}
+.fa-cutlery {
+    color:#f3d9ab;
+    font-size:20px;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.6);
+    height: 86vh;
+}
+
+
+.about-pizza{
+    background: url(../img/preparing-pizza.jpg) no-repeat left;
+    background-size: 50%;
+    overflow: hidden;
+    padding: 100px 0;   
+}
+
+.inner-container{
+    width: 40%;
+    float: right;
+    background-color: #f3d9ab;
+    padding: 100px;
+    box-shadow: 5px 5px #e86a38;
+}
+
+.inner-container h2{
+    margin-bottom: 30px;
+    font-size:1.5rem;
+    color:rgba(0,0,0,0.6);
+}
+
+.text{
+    font-size: 17px;
+    color: rgba(0,0,0,0.6);
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+
+.how-it-works{
+   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    padding-bottom: 50px;
+}
+.how-it-works h2{
+    color:#f3d9ab;
+    padding-top: 30px;
+    font-size:30px;
+}
+span{
+    color:#e86a38;
+}
+.icons{
+    display: flex;
+    width:auto;
+    justify-content: center;
+    
+}
+.icons .icon{
+    width:150px;
+    padding: 20px 30px;
+}
+.icons .icon .icon-img{
+    margin:0 auto;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: #e86a38;
+    cursor:pointer;
+    position: relative;
+    border: 1px solid #e86a38;
+   
+}
+.icon-img img{
+    width:70%;
+    padding:15px;
+    
+}
+.icon h3{
+    margin:15px 0 0; 
+    line-height: 18px;
+    font-size: 16px;
+    text-align: center;
+    color:#e86a38;
+    
+}
+
+.image-section{
+    background-image: url('../img/pizza.jpg') ;
+    height:30vh;
+    background-position: center;
+    background-size: 100%;
+   
+   
+  
+}
+.text-section{
+    color:rgba(0,0,0,0.6);
+    text-align:justify;
+  
+    margin:0px 10%;
+   
+    
+}
+.text-section h2{
+    color:rgba(0,0,0,0.6);
+    text-align:center;
+    color:#f3d9ab;
+    padding-bottom: 20px;
+    font-size: 30px;
+    
+}
+.text-section p{
+   padding: 0px 20px;
+   font-size: 18px;
+   line-height: 30px;
+}
+
+
+footer{
+    padding:15px 0;
+    background-color:#f3d9ab;
+}
+footer .social{
+    text-align: center;
+    padding-top:20px;
+    color:rgba(0,0,0,0.6);
+}
+footer .social a{
+    font-size:24px;
+    color:inherit;
+    border:1px solid rgba(0,0,0,0.6);
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius:50%;
+    margin:0 8px;
+    opacity: 0.75;
+}
+footer .social a:hover{
+    opacity: 0.9;
+}
+
+footer .copyright{
+    margin-top:20px;
+    text-align: center;
+    color:rgba(0,0,0,0.6);
+    font-size:15px;
+}
+
+
+@keyframes animate{
+    0%,10%,100%{
+        width:25%;
+    }
+    70%,90%{
+        width: 50%;
+    }
+}
+
+.about-author{
+    background: url(../img/viktor-vuletic.jpg) no-repeat left;
+    background-size: 50%;
+    overflow: hidden;
+    padding: 75px;  
+    width:55%;
+    margin-left:20rem;
+    
+}
+
+
+.contact-section{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.contact-info{
+    color:#e86a38;
+    line-height: 65px;
+    max-width: 500px;
+    padding-left: 50px;
+    font-size:17px;
+    margin-right:150px;
+   
+}
+.contact-info .contact-icons{
+    font-family: 'Roboto', sans-serif;
+  
+   
+    color:#e86a38;
+}
+.contact-info i{
+    margin-right:20px;
+    font-size: 24px;
+    color:#e86a38;
+    
+}
+.contact-form{
+    max-width: 100%;
+   
+}
+
+.contact-form .text-box{
+    background: #f3d9ab;
+    border: none;
+    width: calc(50% - 10%);
+    height:50px;
+    padding:15px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: o 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-form .send-btn{
+
+    background: #f3d9ab;
+    color:#fff;
+    border: none;
+    width:120px;
+    height:40px;
+    font-size: 15px;
+}
+.contact-form textarea{
+    background: #f3d9ab;
+    color: #fff;
+    border: none;
+    padding:12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: o 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+    width: 85%;
+    height:150px;
+    font-family: 'Roboto', sans-serif;
+}
+.contact-section h2{
+    padding-left:25%;
+    color:#f3d9ab;
+    font-size: 30px;
+}
+.contact-form .send-btn{
+    background: #e86a38;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.contact-form .send-btn:hover{
+    background: #f3d9ab;
+    color:#e86a38;
+}
+
+.gallery-section{
+    padding-top:50px;
+    width:100%;
+    padding-bottom:50px;
+}
+.gallery-section h2{
+    color:rgba(0,0,0,0.6);
+    text-align:center;
+    color:#f3d9ab;
+    padding-bottom: 20px;
+    font-size: 30px;
+    
+}
+.gallery-section>div{
+    margin:10px 185px;
+}
+.gallery-section img{
+    transition: 1s;
+    padding:15px;
+    width:350px;
+}
+.gallery-section img:hover{
+    filter: opacity(90%);
+    transform: scale(1.1);
+}
+
+.author-section h2{
+    color:rgba(0,0,0,0.6);
+    text-align:center;
+    color:#f3d9ab;
+    padding-top: 20px;
+    font-size: 30px;
+    
+}
+.menu-section{
+    padding-bottom: 50px;
+}
+.menu-section h2{
+    color:rgba(0,0,0,0.6);
+    text-align:center;
+    color:#f3d9ab;
+    padding-top: 50px;
+    font-size: 30px;
+   
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding:30px 20px;
+    grid-row-gap:30px;
+}
+.item img{
+    width:100%;
+    height:300px;
+    object-fit: cover;
+    transition: 0.2s ease;
+}
+.item img:hover{
+    transform:scale(1.04);
+}
+.item h3{
+    padding: 5px;
+    text-align:center;
+    text-transform: uppercase;
+    color:#e86a38;
+}
+.item button{
+    padding: 5px 30px;
+    border: none;
+    outline:none;
+    background: #e86a38;
+    color:#f3d9ab;
+    border-radius: 4px;
+    display: block;
+    font-size: 20px;
+    margin:0 auto;
+    text-transform: uppercase;
+}
+.item h4{
+    color:#f3d9ab;
+   
+    text-align:center;
+}
+
+
+
+
